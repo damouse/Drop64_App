@@ -28,7 +28,6 @@ angular.module('starter', ['ionic'])
     DPAD U/D/L/R        W,S,A,D         87, 83, 65, 68
 */
 .controller('RootController', function($scope) {
-  // Touch started
   var socket = io.connect('localhost:3000');
 
   $scope.press = function(b, k) {
@@ -39,21 +38,4 @@ angular.module('starter', ['ionic'])
   $scope.release = function(b, k) {
     socket.emit("controller", { event: 'keyup', button: b, code: k });
   };
-
-
-  // socket.on('connect', function() {
-  //   console.log("Connected");
-
-  //   setInterval(function() {
-  //     socket.emit("controller", "Enter");
-  //   }, 1000);
-  // });
 })
-
-
-
-/*
-Todo: 
-  - Have controller indicate connection
-
-*/
