@@ -1,4 +1,30 @@
 // Just for the sensors testing
 .pane {
-    background-color: transparent !important;
+    background-color: transparent;
+}
+
+.main-row {
+    height: 33vh;
+}
+
+.main-col {
+    width: 33vw;
+}
+
+.controls {
+    width: 33vw;
+}
+
+.left-controls {}
+
+.right-controls {}
+
+.mid-controls {}
+
+.gamepad-button {
+    width: 100px;
+    height: 100px;
+    background: none;
+    background-color: green;
+    color: white;
 }
